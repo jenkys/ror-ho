@@ -1,15 +1,22 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Name:</b>
-  <%= @publisher.name %>
-</p>
+<h1><%= @publisher.name %></h1>
 
 <p>
   <b>Description:</b>
   <%= @publisher.description %>
 </p>
 
+<h2>Books of publisher</h2>
+<table>
+  <thead>
+    <th>Name of book</th>
+    <th>Description of book</th>
+  </thead>
+  <tbody>
+    <%= render @publisher.books %>
+  </tbody>
+</table>
 
 <%= link_to 'Edit', edit_publisher_path(@publisher) %> |
 <%= link_to 'Back', publishers_path %>
