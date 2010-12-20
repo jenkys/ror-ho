@@ -14,7 +14,13 @@
   <tr>
     <td><%= book.name %></td>
     <td><%= book.description %></td>
-    <td><%= book.publisher %></td>
+    <td>
+      <% if book.publisher.nil? then %>
+       <i>None selected</i>
+      <% else %>
+        <%= book.publisher.name %>
+      <% end %>
+    </td>
     <td><%= link_to 'Show', book %></td>
     <td><%= link_to 'Edit', edit_book_path(book) %></td>
     <td><%= link_to 'Destroy', book, :confirm => 'Are you sure?', :method => :delete %></td>

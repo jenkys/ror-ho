@@ -12,7 +12,11 @@
 
 <p>
   <b>Publisher:</b>
-  <%= @book.publisher %>
+  <% if @book.publisher.nil? then %>
+   <i>None selected</i>
+  <% else %>
+    <%= @book.publisher.name %>
+  <% end %>
 </p>
 
 

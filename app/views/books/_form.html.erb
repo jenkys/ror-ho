@@ -21,7 +21,7 @@
   </div>
   <div class="field">
     <%= f.label :publisher %><br />
-    <%= f.text_field :publisher %>
+    <%= f.collection_select :publisher_id, Publisher.find(:all), :id, :name, :prompt => "Select a publibsher" %>
   </div>
   <div class="actions">
     <%= f.submit %>
