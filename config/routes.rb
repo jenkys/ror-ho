@@ -1,4 +1,6 @@
 RorHo::Application.routes.draw do
+  resources :books
+
   resources :publishers
 
   # The priority is based upon order of creation:
