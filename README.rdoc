@@ -1,3 +1,17 @@
+= About this project
+
+This project demostrates creation of easy application for publisher's books 
+evidence
+
+
+
+
+
+
+
+
+
+
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create
