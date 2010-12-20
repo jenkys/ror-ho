@@ -7,7 +7,12 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
-
+<div>
+  <ul id="navigation">
+    <li><%= link_to 'Publishers', root_path %></li>
+    <li><%= link_to 'Books', books_path %></li>
+  </ul>
+</div>
 <%= yield %>
 
 </body>
